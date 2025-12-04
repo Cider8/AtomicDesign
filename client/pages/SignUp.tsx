@@ -14,14 +14,14 @@ export default function SignUp() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
       [name]: value,
     }));
   };
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
       agreed: e.target.checked,
     }));
@@ -85,7 +85,9 @@ export default function SignUp() {
             </div>
 
             <div>
-              <label className="block text-lg font-medium mb-3">Confirm Password</label>
+              <label className="block text-lg font-medium mb-3">
+                Confirm Password
+              </label>
               <input
                 type="password"
                 name="confirmPassword"
@@ -120,7 +122,10 @@ export default function SignUp() {
 
           <p className="mt-8 text-center text-gray-600">
             Already have an account?{" "}
-            <Link to="/login" className="text-black hover:underline font-medium">
+            <Link
+              to="/login"
+              className="text-black hover:underline font-medium"
+            >
               Login
             </Link>
           </p>

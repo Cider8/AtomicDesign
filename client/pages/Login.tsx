@@ -11,7 +11,7 @@ export default function Login() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
       [name]: value,
     }));
@@ -43,7 +43,9 @@ export default function Login() {
             </div>
 
             <div>
-              <label className="block text-lg font-medium mb-3">Passwword</label>
+              <label className="block text-lg font-medium mb-3">
+                Passwword
+              </label>
               <input
                 type="password"
                 name="password"
@@ -64,7 +66,10 @@ export default function Login() {
 
           <p className="mt-8 text-center text-gray-600">
             Don't have an account?{" "}
-            <Link to="/signup" className="text-black hover:underline font-medium">
+            <Link
+              to="/signup"
+              className="text-black hover:underline font-medium"
+            >
               Sign up
             </Link>
           </p>

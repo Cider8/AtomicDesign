@@ -20,19 +20,32 @@ export default function AppLayout({ children }: AppLayoutProps) {
           <div className="flex justify-between items-center h-16 gap-8">
             {/* Desktop Navigation - Center */}
             <div className="hidden md:flex items-center gap-10">
-              <Link to="/" className="text-sm text-gray-800 hover:text-gray-600 transition">
+              <Link
+                to="/"
+                className="text-sm text-gray-800 hover:text-gray-600 transition"
+              >
                 About us
               </Link>
-              <Link to="/" className="text-sm text-gray-800 hover:text-gray-600 transition">
+              <Link
+                to="/"
+                className="text-sm text-gray-800 hover:text-gray-600 transition"
+              >
                 Services
               </Link>
-              <Link to="/" className="text-sm text-gray-800 hover:text-gray-600 transition">
+              <Link
+                to="/"
+                className="text-sm text-gray-800 hover:text-gray-600 transition"
+              >
                 Blog
               </Link>
               <div className="relative">
                 <button className="text-sm text-gray-800 hover:text-gray-600 transition flex items-center gap-2">
                   Resources
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-4 h-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M7 10l5 5 5-5z" />
                   </svg>
                 </button>
@@ -216,32 +229,57 @@ export default function AppLayout({ children }: AppLayoutProps) {
               <h4 className="font-semibold mb-4 text-sm">Follow us</h4>
               <ul className="space-y-3 text-sm text-gray-600">
                 <li>
-                  <a href="https://facebook.com" className="hover:text-black flex items-center gap-2">
-                    <span className="w-5 h-5 flex items-center justify-center">f</span>
+                  <a
+                    href="https://facebook.com"
+                    className="hover:text-black flex items-center gap-2"
+                  >
+                    <span className="w-5 h-5 flex items-center justify-center">
+                      f
+                    </span>
                     Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com" className="hover:text-black flex items-center gap-2">
-                    <span className="w-5 h-5 flex items-center justify-center">@</span>
+                  <a
+                    href="https://instagram.com"
+                    className="hover:text-black flex items-center gap-2"
+                  >
+                    <span className="w-5 h-5 flex items-center justify-center">
+                      @
+                    </span>
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com" className="hover:text-black flex items-center gap-2">
-                    <span className="w-5 h-5 flex items-center justify-center">X</span>
+                  <a
+                    href="https://twitter.com"
+                    className="hover:text-black flex items-center gap-2"
+                  >
+                    <span className="w-5 h-5 flex items-center justify-center">
+                      X
+                    </span>
                     X
                   </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com" className="hover:text-black flex items-center gap-2">
-                    <span className="w-5 h-5 flex items-center justify-center">in</span>
+                  <a
+                    href="https://linkedin.com"
+                    className="hover:text-black flex items-center gap-2"
+                  >
+                    <span className="w-5 h-5 flex items-center justify-center">
+                      in
+                    </span>
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="https://youtube.com" className="hover:text-black flex items-center gap-2">
-                    <span className="w-5 h-5 flex items-center justify-center">▶</span>
+                  <a
+                    href="https://youtube.com"
+                    className="hover:text-black flex items-center gap-2"
+                  >
+                    <span className="w-5 h-5 flex items-center justify-center">
+                      ▶
+                    </span>
                     YouTube
                   </a>
                 </li>
