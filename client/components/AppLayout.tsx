@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Settings } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -18,14 +18,6 @@ export default function AppLayout({ children }: AppLayoutProps) {
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
         <nav className="mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex justify-between items-center h-16 gap-8">
-            {/* Logo */}
-            <Link to="/" className="flex-shrink-0">
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
-                <circle cx="12" cy="12" r="4" />
-              </svg>
-            </Link>
-
             {/* Desktop Navigation - Center */}
             <div className="hidden md:flex items-center gap-10">
               <Link to="/" className="text-sm text-gray-800 hover:text-gray-600 transition">
@@ -61,9 +53,6 @@ export default function AppLayout({ children }: AppLayoutProps) {
               >
                 Login
               </Link>
-              <button className="p-2 text-gray-600 hover:text-gray-800 transition">
-                <Settings className="w-5 h-5" />
-              </button>
             </div>
 
             {/* Mobile Menu Button */}
