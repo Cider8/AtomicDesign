@@ -19,7 +19,10 @@ export default function AppLayout({ children }: AppLayoutProps) {
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="text-xl font-bold">
-              ATOMIC
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
             </Link>
 
             {/* Desktop Navigation */}

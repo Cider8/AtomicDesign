@@ -55,7 +55,7 @@ export default function Index() {
 
           <div className="mt-16 lg:mt-20 rounded overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=600&fit=crop"
+              src="https://cdn.builder.io/api/v1/image/assets%2F44dbb47e35374b0c87ebb3e2a02e9a55%2F2983c6a25d1c485f8a0bc95f6e0b6250?format=webp&width=1200"
               alt="Automotive interior design"
               className="w-full h-auto object-cover aspect-video"
             />
@@ -83,7 +83,7 @@ export default function Index() {
             <div className="border border-gray-200">
               <div className="aspect-square bg-gray-100 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F44dbb47e35374b0c87ebb3e2a02e9a55%2Ffec5038b1aee4ff0a17bf7afc1a0b85e?format=webp&width=400"
                   alt="Concept development"
                   className="w-full h-full object-cover"
                 />
@@ -100,7 +100,7 @@ export default function Index() {
             <div className="border border-gray-200">
               <div className="aspect-square bg-gray-100 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F44dbb47e35374b0c87ebb3e2a02e9a55%2F356292f4d5de4012a31edfeead5709e2?format=webp&width=400"
                   alt="Digital modelling"
                   className="w-full h-full object-cover"
                 />
@@ -117,7 +117,7 @@ export default function Index() {
             <div className="border border-gray-200">
               <div className="aspect-square bg-gray-100 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1545665225-4b8c3206dae6?w=400&h=400&fit=crop"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F44dbb47e35374b0c87ebb3e2a02e9a55%2F6fb0bdb8167440549f556bdb21538ca6?format=webp&width=400"
                   alt="Prototyping"
                   className="w-full h-full object-cover"
                 />
