@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Settings } from "lucide-react";
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -16,56 +16,60 @@ export default function AppLayout({ children }: AppLayoutProps) {
   return (
     <div className="flex flex-col min-h-screen bg-white text-black">
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link to="/" className="text-xl font-bold">
+        <nav className="mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="flex justify-between items-center h-16 gap-8">
+            {/* Logo */}
+            <Link to="/" className="flex-shrink-0">
               <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
                 <circle cx="12" cy="12" r="4" />
               </svg>
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
-              <Link to="/" className="text-sm hover:text-gray-600">
+            {/* Desktop Navigation - Center */}
+            <div className="hidden md:flex items-center gap-10">
+              <Link to="/" className="text-sm text-gray-800 hover:text-gray-600 transition">
                 About us
               </Link>
-              <Link to="/" className="text-sm hover:text-gray-600">
+              <Link to="/" className="text-sm text-gray-800 hover:text-gray-600 transition">
                 Services
               </Link>
-              <Link to="/" className="text-sm hover:text-gray-600">
+              <Link to="/" className="text-sm text-gray-800 hover:text-gray-600 transition">
                 Blog
               </Link>
-              <div className="relative group">
-                <button className="text-sm flex items-center gap-1 hover:text-gray-600">
+              <div className="relative">
+                <button className="text-sm text-gray-800 hover:text-gray-600 transition flex items-center gap-2">
                   Resources
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5z" />
                   </svg>
                 </button>
               </div>
             </div>
 
-            {/* Desktop Auth Buttons */}
-            <div className="hidden md:flex gap-4">
+            {/* Desktop Auth Buttons & Settings - Right */}
+            <div className="hidden md:flex items-center gap-4 flex-shrink-0">
               <Link
                 to="/signup"
-                className="px-6 py-2 border border-gray-300 text-sm hover:bg-gray-50"
+                className="px-5 py-2 border border-gray-400 text-sm text-gray-800 hover:bg-gray-100 transition"
               >
                 Sign up
               </Link>
               <Link
                 to="/login"
-                className="px-6 py-2 bg-black text-white text-sm hover:bg-gray-800"
+                className="px-5 py-2 bg-black text-white text-sm hover:bg-gray-900 transition"
               >
                 Login
               </Link>
+              <button className="p-2 text-gray-600 hover:text-gray-800 transition">
+                <Settings className="w-5 h-5" />
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden p-2 hover:bg-gray-100"
+              className="md:hidden p-2 hover:bg-gray-100 flex-shrink-0"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
